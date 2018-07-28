@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.colinlvbin.extreme.anywhere">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:label="@string/title_activity_sign_up">
+        </activity>
+        <activity
+            android:name=".activity.SettingsNavActivity"
+            android:label="@string/title_activity_settings_nav">
+        </activity>
+        <activity
+            android:name=".activity.SettingsBasicActivity"
+            android:label="@string/title_activity_settings_basic">
+        </activity>
+        <activity
+            android:name=".activity.SettingsPasswordActivity"
+            android:label="@string/title_activity_settings_password">
+        </activity>
+        <activity
+            android:name=".activity.ConfigurePostActivity"
+            android:label="@string/title_activity_configure_post">
+        </activity>
+        <activity
+            android:name=".activity.CreatePostActivity"
+            android:label="@string/title_activity_create_post">
+        </activity>
+        <activity
+            android:name=".activity.ShowPostsActivity"
+            android:label="@string/nearby_posts">
+        </activity>
+        <activity
+            android:name=".activity.PostDetailActivity"
+            android:label="@string/title_activity_post_detail">
+        </activity>
+        <activity
+            android:name=".activity.PostCommentsActivity"
+            android:label="@string/title_activity_comments">
+        </activity>
+        <activity
+            android:name=".activity.SettingsConfigureActivity"
+            android:label="@string/title_activity_settings_configure">
+        </activity>
+    </application>
+
+</manifest>
