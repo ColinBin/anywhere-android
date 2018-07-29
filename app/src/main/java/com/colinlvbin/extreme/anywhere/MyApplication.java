@@ -32,7 +32,7 @@ public class MyApplication extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
-        //LBS相关
+        //LBS相关colin
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         List<String> providerList = locationManager.getProviders(true);
         if (providerList.contains(LocationManager.NETWORK_PROVIDER)) {

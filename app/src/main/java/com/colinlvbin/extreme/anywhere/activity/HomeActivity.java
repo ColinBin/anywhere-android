@@ -126,7 +126,6 @@ public class HomeActivity extends AppCompatActivity
                 Intent toConfigruePost = new Intent(HomeActivity.this, ConfigurePostActivity.class);
                 userInfoBundle.putSerializable(Config.BUNDLE_USER_INFO, user);
                 toConfigruePost.putExtras(userInfoBundle);
-
                 startActivityForResult(toConfigruePost, Config.HOME_TO_CONFIGURE_POST_REQUESTCODE);
                 break;
             case R.id.nav_show_posts:

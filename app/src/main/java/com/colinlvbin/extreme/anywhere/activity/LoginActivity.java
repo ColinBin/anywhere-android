@@ -126,7 +126,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void Login(String user_id,String password){
         progressDialog= RoutineOps.ShowProgressDialog(this,this.getString(R.string.logging_in));
         Request<JSONObject> loginRequest= NoHttp.createJsonObjectRequest(Config
-                .SERVER_IP+"/login", RequestMethod.CONNECT.GET);
+                .SERVER_IP+"/login", RequestMethod.CONNECT.POST);
         loginRequest.add("user_id",user_id);
         loginRequest.add("password", MD5.GetMD5(password));
         requestQueue.add(Config.REQUEST_LOGIN,loginRequest,onResponseListener);

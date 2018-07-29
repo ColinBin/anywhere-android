@@ -5,7 +5,7 @@ package com.colinlvbin.extreme.anywhere;
  */
 public class Config {
 
-    public static final String SERVER_IP="http://127.0.0.1:5000";
+    public static final String SERVER_IP="http://149.28.83.56:5000";
     public static final String AVATAR_FILE_LOCATION="file:///sdcard/avatar.jpg";
     public static final String POST_PIC_FILE_LOCATION="file:///sdcard/post_pic.jpg";
     //活动请求编号
